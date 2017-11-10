@@ -1,0 +1,13 @@
+<h1>Lotto#show</h1>
+
+내번호 : <%= @lotto %>
+<br>
+실제번호 : <%= @real_num[0,6] %> , bonus : <%= @real_num.last %>
+<br>
+
+맞은개수 : <%=@same_norm.length%>, 당신은 <%=7-@same_norm.length%> 등 입니다. <br>
+보너스 : <%=@same_bonus.length%> 개 맞음
+
+
+<p>if 문사용</p>
+최종등수 : <%=@result%>
